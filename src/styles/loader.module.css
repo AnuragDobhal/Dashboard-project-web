@@ -1,0 +1,20 @@
+.loader {
+  width: 40px;
+  aspect-ratio: 1;
+  --c: linear-gradient(#000 0 0);
+  --m: radial-gradient(farthest-side,#000 92%,#0000);
+  background: 
+      var(--m) center               /12px 12px,
+      var(--c) center               /8px 16px, 
+      var(--c) center               /8px 16px, 
+      var(--c) center               /16px 8px, 
+      var(--c) center               /16px 8px;
+  background-repeat: no-repeat;
+  animation: 
+      l18-1 1.5s infinite,
+      l18-2 1.5s infinite;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

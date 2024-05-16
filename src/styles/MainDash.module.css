@@ -1,0 +1,124 @@
+.container {
+  max-width: 1200px;
+  margin: 20px auto 30px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.09);
+}
+
+.title {
+  text-align: center;
+  font-size: 32px;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+.mainSection {
+  margin-bottom: 40px;
+}
+
+.subSection {
+  margin-top: 40px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 30px;
+}
+
+.card {
+  background-color: #f7f7f7;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+.card:hover{
+  transform: translateY(-4px) scale(1.01);
+}
+.icon_case{
+  color: #f95d15;
+}
+.icon_recover{
+  color: #56e743;
+}
+.icon_death{
+  color: #ff0000;
+}
+.number_case{
+  color: #f95d15;
+}
+
+.number_recover{
+  color: #56e743;
+}
+.number_death{
+  color: #ff0000;
+}
+
+.searchContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Align items to the right */
+  margin-bottom: 20px;
+}
+
+.searchInput {
+  padding: 8px; /* Adjust padding */
+  width: 150px; /* Set a smaller width */
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-size: 14px; /* Reduce font size */
+  outline: none;
+}
+
+.searchButton {
+  background-color: #56e743;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.searchButton:hover {
+  background-color: #45a049;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+  }
+
+  .card {
+    padding: 25px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 20px;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .card {
+    padding: 20px;
+  }
+}
